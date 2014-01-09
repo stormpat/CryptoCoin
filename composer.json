@@ -1,0 +1,20 @@
+{
+    "name": "gkunno/crypto-coin",
+    "description": "PHP implementation for generating cryptocurrencies public and private keys.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Patrik Storm",
+            "email": "storm.patrik@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+
+    },
+    "autoload": {
+        "psr-0": {
+            "CryptoCoin": "src/"
+        }
+    }
+}
