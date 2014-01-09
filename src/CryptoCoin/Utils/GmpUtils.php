@@ -22,7 +22,7 @@ class GmpUtils
     {
         if (extension_loaded('gmp') && USE_EXT == 'GMP')
         {
-            $random     = gmp_strval(gmp_random());
+            $random = gmp_strval(gmp_random());
             $small_rand = rand();
             while (gmp_cmp($random, $n) > 0)
             {
