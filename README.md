@@ -14,18 +14,18 @@ that you use PHP 5.5.x.
 
 *With BcMath*
 
-- PHP 5.4.21
+- **PHP 5.4.21**
 - ~6.3 sec
 
-- PHP 5.5.7
+- **PHP 5.5.7**
 - ~1.5 sec
 
 *With GMP*
 
-- PHP 5.5.7
+- **PHP 5.5.7**
 - ~0.02 sec
 
-As in the above benchmarks, i strongly suggest GMP with a bleeding edge PHP version.
+As you can see in the above benchmarks, i strongly suggest GMP with a new PHP version.
 Otherwise you should probably try using some sort of queue service for the generation.
 
 For additional info please read: [BcMath vs GMP](http://phpseclib.sourceforge.net/math/intro.html)
