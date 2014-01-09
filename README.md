@@ -79,10 +79,10 @@ For the version constraint use ```dev-master```
 
 Or just update your composer.json and run composer install.
 
-```json
+```
 require": {
         "gkunno/crypto-coin": "dev-master"
-    }
+}
 ```
 
 Install with ```composer install``
@@ -150,4 +150,4 @@ THE SOFTWARE.
 
 This lib is based on the work of [PHPCoinAddress](https://github.com/gkunno/PHPCoinAddress)
 and [PHP Elliptic Curve DSA and DH](https://github.com/mdanter/phpecc) please see their repos
-for additional info.
+for additional info. Big salute!
