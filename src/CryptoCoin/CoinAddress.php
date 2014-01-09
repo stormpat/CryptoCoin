@@ -323,7 +323,7 @@ class CoinAddress
         $privBin = '';
         for ($i = 0; $i < 32; $i++)
         {
-            $privBin .= chr(mt_rand(0, $i ? 0xff : 0xfe));
+            $privBin .= chr(openssl_random_pseudo_bytes(0, $i ? 0xff : 0xfe));
         }
         $point = Point::mul(BcmathUtils::bin2bc("\x00" . $privBin), self::$secp256k1_G);
 

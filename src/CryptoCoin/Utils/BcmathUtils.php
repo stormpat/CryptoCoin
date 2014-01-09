@@ -14,7 +14,7 @@ class BcmathUtils
                 $max = $min;
                 $min = 0;
             }
-            return bcadd(bcmul(bcdiv(mt_rand(0, mt_getrandmax()), mt_getrandmax(), strlen($max)), bcsub(bcadd($max, 1), $min)), $min);
+            return bcadd(bcmul(bcdiv(openssl_random_pseudo_bytes(0, mt_getrandmax()), mt_getrandmax(), strlen($max)), bcsub(bcadd($max, 1), $min)), $min);
         }
         else
         {
