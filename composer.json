@@ -1,6 +1,6 @@
 {
     "name": "gkunno/crypto-coin",
-    "description": "PHP implementation for generating cryptocurrencies public and private keys.",
+    "description": "Generate cryptocurrency addresses with PHP.",
     "license": "MIT",
     "authors": [
         {
@@ -9,9 +9,6 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {
-
-    },
     "autoload": {
         "psr-0": {
             "CryptoCoin": "src/"

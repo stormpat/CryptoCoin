@@ -52,7 +52,7 @@ Or just update your composer.json and run composer install.
 
 Just clone the repository, and set up your bootstrapping.
 
-```git clone XXXXXXXX```
+```git clone https://github.com/gkunno/CryptoCoin.git```
 ###Usage
 
 Require the composer autoload file
