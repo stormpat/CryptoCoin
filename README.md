@@ -1,11 +1,5 @@
 #CryptoCoin 0.0.1-alpha
 --
-**The Surgeon General's Warning on CryptoCoin**
-
-Please be carefull using this in any real application. I have not (yet)
-tested this with real coins of any sort. Thats the next step.
-If you want please test against various coins and issue a PR if there is some
-improvements.
 
 ###Requirements
 
@@ -16,19 +10,23 @@ Requires GMP or bcmath extension (GMP preferred for better performance)
 ***Test setup: 2.2Ghz Core i7, 8GB DDR3, OSX 10.9.1***
 
 The algorythm is quite slow with bcmath on older PHP versions. Its highly recommended
-that you use PHP 5.5.x. I have not yet tested with GMP, ill post benchmarks later.
+that you use PHP 5.5.x.
 
-*The BcMath PHP*
+*With BcMath*
 
-PHP 5.4.21
-~6.3 sec
+- PHP 5.4.21
+- ~6.3 sec
 
-PHP 5.5.7
-~1.5 sec
+- PHP 5.5.7
+- ~1.5 sec
 
 *With GMP*
 
-[coming later]
+- PHP 5.5.7
+- ~0.02 sec
+
+As in the above benchmarks, i strongly suggest GMP with a bleeding edge PHP version.
+Otherwise you should probably try using some sort of queue service for the generation.
 
 For additional info please read: [BcMath vs GMP](http://phpseclib.sourceforge.net/math/intro.html)
 
