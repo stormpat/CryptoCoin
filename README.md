@@ -7,9 +7,13 @@ tested this with real coins of any sort. Thats the next step.
 If you want please test against various coins and issue a PR if there is some
 improvements.
 
+###Requirements
+
+Requires GMP or bcmath extension (GMP preferred for better performance)
+
 ###About
 
-This lib generates public/private keys for various cryptocurrencies. Currently
+This lib generates public/private key pairs for various cryptocurrencies. Currently
 supported currencies are:
 
 - [Bitcoin](http://bitcoin.org/)
