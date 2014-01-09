@@ -81,7 +81,7 @@ Or just update your composer.json and run composer install.
 
 ```
 require": {
-        "gkunno/crypto-coin": "dev-master"
+    "gkunno/crypto-coin": "dev-master"
 }
 ```
 
