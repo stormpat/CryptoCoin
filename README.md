@@ -54,6 +54,8 @@ The require the library.
 
 ```composer require gkunno/crypto-coin```
 
+For the version constraint use ```dev-master```
+
 Or just update your composer.json and run composer install.
 
 **Manually**
