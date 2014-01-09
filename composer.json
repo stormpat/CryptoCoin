@@ -2,6 +2,7 @@
     "name": "gkunno/crypto-coin",
     "description": "Generate cryptocurrency addresses with PHP.",
     "license": "MIT",
+    "keywords": ["bitcoin", "address", "generator", "litecoin", "cryptocurrency"],
     "authors": [
         {
             "name": "Patrik Storm",
