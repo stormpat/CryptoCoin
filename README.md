@@ -13,12 +13,18 @@ Requires GMP or bcmath extension (GMP preferred for better performance)
 
 **Benchmarks**
 
-***Test setup: 2.2Ghz Core i7, 8GB DDR3, PHP 5.4.21, OSX Maveric***
+***Test setup: 2.2Ghz Core i7, 8GB DDR3, OSX 10.9.1***
+
+The algorythm is quite slow with bcmath on older PHP versions. Its highly recommended
+that you use PHP 5.5.x. I have not yet tested with GMP, ill post benchmarks later.
 
 *The BcMath PHP*
 
-The extension will be quite slow, it takes about
-6 seconds the generate the keys, however with the gmp extension it will be alot faster.
+PHP 5.4.21
+~6.3 sec
+
+PHP 5.5.7
+~1.5 sec
 
 *With GMP*
 

@@ -4,12 +4,10 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use CryptoCoin\CoinAddress;
 
-//$time_start = microtime(true);
 
-//coin = CoinAddress::bitcoin();
 
-//var_dump($coin);
+$time_start = microtime(true);
 
-//echo 'Total execution time in seconds: ' . (microtime(true) - $time_start);
+$coin = CoinAddress::litecoin();
 
-phpinfo();
+echo 'Total execution time in seconds: ' . (microtime(true) - $time_start);
