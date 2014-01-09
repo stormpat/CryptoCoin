@@ -79,6 +79,14 @@ For the version constraint use ```dev-master```
 
 Or just update your composer.json and run composer install.
 
+```json
+require": {
+        "gkunno/crypto-coin": "dev-master"
+    }
+```
+
+Install with ```composer install``
+
 **Manually**
 
 Just clone the repository, and set up your bootstrapping.
