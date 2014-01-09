@@ -13,6 +13,10 @@
     "require": {
         "php": ">=5.3.0"
     },
+    "suggest": {
+        "ext-gmp": "Add the GMP extension for better performance.",
+        "ext-bcmath": "The is a fallback, and if the GMP is not availabe this is a requirement."
+    },
     "autoload": {
         "psr-0": {
             "CryptoCoin": "src/"
