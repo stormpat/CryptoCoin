@@ -1,4 +1,4 @@
-#Cryptocoin 0.0.1-alpha
+#CryptoCoin 0.0.1-alpha
 --
 **The Surgeon General's Warning on CryptoCoin**
 
@@ -10,6 +10,15 @@ improvements.
 ###Requirements
 
 Requires GMP or bcmath extension (GMP preferred for better performance)
+
+**Benchmarks**
+
+The BcMath PHP extension will be quite slow (on my 2.2Ghz Core i7, 8GB DDR3, PHP 5.4.21) it takes about
+6 seconds the generate the keys, however with the gmp extension it will be alot faster.
+
+**Ill add GMP benchmarks later**
+
+For additional info please read: [BcMath vs GMP](http://phpseclib.sourceforge.net/math/intro.html)
 
 ###About
 
