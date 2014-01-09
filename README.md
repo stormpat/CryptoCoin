@@ -12,24 +12,28 @@ improvements.
 This lib generates public/private keys for various cryptocurrencies. Currently
 supported currencies are:
 
-- Bitcoin
-- Litecoin
-- Bbqcoin
-- Bitbar
-- Bytecoin
-- Chncoin
-- Devcoin
-- Feathercoin
-- Freicoin
+- [Bitcoin](http://bitcoin.org/)
+- [Litecoin](https://litecoin.org/)
+- [Bbqcoin](http://bbqcoin.org/)
+- [Bitbar](http://bitbar.biz/downloads)
+- [Bytecoin](http://bytecoin.biz/)
+- [Chncoin](http://chncoin.org/)
+- [Devcoin](http://devcoin.org/)
+- [Feathercoin](http://feathercoin.com/)
+- [Freicoin](http://freico.in/)
 - Junkcoin
-- Mincoin
-- Namecoin
-- Novacoin
+- [Mincoin](http://www.min-coin.org/)
+- [Namecoin](https://www.namecoin.org/)
+- [Novacoin](http://novacoin.org/)
 - Onecoin
-- Ppcoin
+- [Ppcoin](https://en.bitcoin.it/wiki/PPCoin)
 - Smallchange
-- Terracoin
-- Yacoin
+- [Terracoin](http://terracoin.org/)
+- [Yacoin](http://www.yacoin.org/)
+
+This repo is a fork, and made mainly because of my increased interest in cryptocurrencies,
+and because the original libraries where not composer friendly, and not namespaced. So this library can be easily used
+with other packages and frameworks. See credits for more info.
 
 ###Installation
 
@@ -110,5 +114,5 @@ THE SOFTWARE.
 ###Credits
 
 This lib is based on the work of [PHPCoinAddress](https://github.com/gkunno/PHPCoinAddress)
-and [PHP Elliptic Curve DSA and DH](https://github.com/mdanter/phpecc) please see their repo
+and [PHP Elliptic Curve DSA and DH](https://github.com/mdanter/phpecc) please see their repos
 for additional info.
