@@ -85,7 +85,7 @@ require": {
 }
 ```
 
-Install with ```composer install``
+Install with ```composer install```
 
 **Manually**
 
