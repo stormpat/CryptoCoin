@@ -3,7 +3,7 @@
 
 ###Requirements
 
-Requires GMP or bcmath extension (GMP preferred for better performance)
+Requires [GMP](http://www.php.net/manual/en/book.gmp.php) or [BcMath](http://www.php.net/manual/en/book.bc.php) extension (GMP preferred for better performance)
 
 **Benchmarks**
 
