@@ -17,8 +17,8 @@ class Point implements PointInterface
     public function __construct(CurveFp $curve, $x, $y, $order = null)
     {
         $this->curve = $curve;
-        $this->x     = $x;
-        $this->y     = $y;
+        $this->x = $x;
+        $this->y = $y;
         $this->order = $order;
         if (isset($this->curve) && ($this->curve instanceof CurveFp))
         {

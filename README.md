@@ -1,4 +1,4 @@
-#CryptoCoin 0.0.1-alpha
+#CryptoCoin
 --
 
 ###Requirements
@@ -10,13 +10,13 @@ Requires GMP or bcmath extension (GMP preferred for better performance)
 ***Test setup: 2.2Ghz Core i7, 8GB DDR3, OSX 10.9.1***
 
 The algorythm is quite slow with bcmath on older PHP versions. Its highly recommended
-that you use PHP 5.5.x.
+that you use PHP 5.5.x. The benchmark is not tested on PHP 5.3.x yet, it does work, but the speed
+can be slow. I will add benchmarks when i do the tests.
 
 *With BcMath*
 
 - **PHP 5.4.21**
 - ~6.3 sec
-
 - **PHP 5.5.7**
 - ~1.5 sec
 
@@ -54,7 +54,7 @@ supported currencies are:
 - [Terracoin](http://terracoin.org/)
 - [Yacoin](http://www.yacoin.org/)
 
-This repo is a fork, and made mainly because of my increased interest in cryptocurrencies,
+This library is a fork, and made because of my increased interest in cryptocurrencies,
 and because the original libraries where not composer friendly, and not namespaced. So this library can be easily used
 with other packages and frameworks. See credits for more info.
 
@@ -69,7 +69,7 @@ $ curl -sS https://getcomposer.org/installer | php
 $ mv composer.phar /usr/local/bin/composer
 ```
 
-The require the library.
+Then require the library.
 
 ```composer require gkunno/crypto-coin```
 
@@ -100,7 +100,7 @@ Use the library by importing the namespace.
 
 ```use CryptoCoin\CoinAddress;```
 
-Finally get the data from the algorythm.
+Finally get the generated data from the algorythm.
 
 ```php
 

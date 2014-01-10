@@ -1,5 +1,8 @@
 <?php namespace CryptoCoin;
 
+use CryptoCoin\Utils\GmpUtils;
+use CryptoCoin\Utils\BcmathUtils;
+
 class NumberTheory
 {
     public static $miller_rabin_test_count;
@@ -50,7 +53,7 @@ class NumberTheory
                     {
                         for ($i = 2; $i < count($polymod) + 1; $i++)
                         {
-                            $poly[count($poly) - $i] = gmp_strval(gmp_Utils::gmp_mod2(gmp_sub($poly[count($poly) - $i], gmp_mul(end($poly), $polymod[count($polymod) - $i])), $p));
+                            $poly[count($poly) - $i] = gmp_strval(GmpUtils::gmp_mod2(gmp_sub($poly[count($poly) - $i], gmp_mul(end($poly), $polymod[count($polymod) - $i])), $p));
                         }
                     }
                     $poly = array_slice($poly, 0, count($poly) - 1);
@@ -93,7 +96,7 @@ class NumberTheory
                     $index = $i + $j;
                     if (!isset($prod[$index]))
                         $prod[$index] = 0;
-                    $prod[$index] = gmp_strval(gmp_Utils::gmp_mod2((gmp_add($prod[$index], gmp_mul($m1[$i], $m2[$j]))), $p));
+                    $prod[$index] = gmp_strval(GmpUtils::gmp_mod2((gmp_add($prod[$index], gmp_mul($m1[$i], $m2[$j]))), $p));
                 }
             }
             return self::polynomial_reduce_mod($prod, $polymod, $p);
@@ -127,7 +130,7 @@ class NumberTheory
                     return 1;
                 $G = $base;
                 $k = $exponent;
-                if (gmp_cmp(gmp_Utils::gmp_mod2($k, 2), 1) == 0)
+                if (gmp_cmp(GmpUtils::gmp_mod2($k, 2), 1) == 0)
                     $s = $G;
                 else
                     $s = array(
@@ -137,7 +140,7 @@ class NumberTheory
                 {
                     $k = gmp_div($k, 2);
                     $G = self::polynomial_multiply_mod($G, $G, $polymod, $p);
-                    if (gmp_Utils::gmp_mod2($k, 2) == 1)
+                    if (GmpUtils::gmp_mod2($k, 2) == 1)
                     {
                         $s = self::polynomial_multiply_mod($G, $s, $polymod, $p);
                     }
@@ -228,15 +231,15 @@ class NumberTheory
                 $jac = self::jacobi($a, $p);
                 if ($jac == -1)
                     throw new SquareRootException($a . " has no square root modulo " . $p);
-                if (gmp_strval(gmp_Utils::gmp_mod2($p, 4)) == 3)
+                if (gmp_strval(GmpUtils::gmp_mod2($p, 4)) == 3)
                     return self::modular_exp($a, gmp_strval(gmp_div(gmp_add($p, 1), 4)), $p);
-                if (gmp_strval(gmp_Utils::gmp_mod2($p, 8)) == 5)
+                if (gmp_strval(GmpUtils::gmp_mod2($p, 8)) == 5)
                 {
                     $d = self::modular_exp($a, gmp_strval(gmp_div(gmp_sub($p, 1), 4)), $p);
                     if ($d == 1)
                         return self::modular_exp($a, gmp_strval(gmp_div(gmp_add($p, 3), 8)), $p);
                     if ($d == $p - 1)
-                        return gmp_strval(gmp_Utils::gmp_mod2(gmp_mul(gmp_mul(2, $a), self::modular_exp(gmp_mul(4, $a), gmp_div(gmp_sub($p, 5), 8), $p)), $p));
+                        return gmp_strval(GmpUtils::gmp_mod2(gmp_mul(gmp_mul(2, $a), self::modular_exp(gmp_mul(4, $a), gmp_div(gmp_sub($p, 5), 8), $p)), $p));
                 }
                 for ($b = 2; $b < $p; $b++)
                 {
@@ -364,7 +367,7 @@ class NumberTheory
             while ($a)
             {
                 $temp = $a;
-                $a    = gmp_Utils::gmp_mod2($b, $a);
+                $a    = GmpUtils::gmp_mod2($b, $a);
                 $b    = $temp;
             }
             return gmp_strval($b);
@@ -730,7 +733,7 @@ class NumberTheory
                 $result = 1;
                 while ($z != 1)
                 {
-                    $z      = gmp_strval(gmp_Utils::gmp_mod2(gmp_mul($z, $x), $m));
+                    $z      = gmp_strval(GmpUtils::gmp_mod2(gmp_mul($z, $x), $m));
                     $result = gmp_add($result, 1);
                 }
                 return gmp_strval($result);
