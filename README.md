@@ -1,5 +1,4 @@
 #CryptoCoin
----
 
 ###Hightlights
 
