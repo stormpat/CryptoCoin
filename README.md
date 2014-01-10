@@ -2,7 +2,7 @@
 
 ###Hightlights
 
-- Generate public / private keys for a [variety](https://github.com/gkunno/CryptoCoin#about) of cryptocurrencis.
+- Generate public / private keys for a [variety](https://github.com/gkunno/CryptoCoin#about) of cryptocurrencies.
 - Extreamly easy to use. (Just one method to call)
 - [No use of mt_rand](http://phpsecurity.readthedocs.org/en/latest/Insufficient-Entropy-For-Random-Values.html), instead this lib uses [openssl_random_pseudo_bytes](http://us3.php.net/openssl_random_pseudo_bytes) for more security.
 
