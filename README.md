@@ -151,6 +151,6 @@ THE SOFTWARE.
 
 ###Credits
 
-This lib is based on the work of [PHPCoinAddress](https://github.com/gkunno/PHPCoinAddress)
+This lib is based on the work of [PHPCoinAddress](https://github.com/zamgo/PHPCoinAddress)
 and [PHP Elliptic Curve DSA and DH](https://github.com/mdanter/phpecc) please see their repos
 for additional info. Big salute!
