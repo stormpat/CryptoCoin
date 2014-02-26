@@ -1,6 +1,6 @@
 {
-    "name": "gkunno/crypto-coin",
-    "description": "Generate cryptocurrency addresses with PHP.",
+    "name": "stormpat/crypto-coin",
+    "description": "Generate cryptocurrency addresses and private keys with PHP.",
     "license": "MIT",
     "keywords": ["bitcoin", "address", "generator", "litecoin", "cryptocurrency"],
     "authors": [

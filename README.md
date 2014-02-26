@@ -2,7 +2,7 @@
 
 ###Hightlights
 
-- Generate public / private keys for a [variety](https://github.com/gkunno/CryptoCoin#about) of cryptocurrencies.
+- Generate public / private keys for a [variety](https://github.com/stormpat/CryptoCoin#about) of cryptocurrencies.
 - Extreamly easy to use. (Just one method to call)
 - [No use of mt_rand](http://phpsecurity.readthedocs.org/en/latest/Insufficient-Entropy-For-Random-Values.html), instead this lib uses [openssl_random_pseudo_bytes](http://us3.php.net/openssl_random_pseudo_bytes) for more security.
 
@@ -76,7 +76,7 @@ $ mv composer.phar /usr/local/bin/composer
 
 Then require the library.
 
-```composer require gkunno/crypto-coin```
+```composer require stormpat/crypto-coin```
 
 For the version constraint use ```dev-master```
 
@@ -84,7 +84,7 @@ Or just update your composer.json and run composer install.
 
 ```
 require": {
-    "gkunno/crypto-coin": "dev-master"
+    "stormpat/crypto-coin": "dev-master"
 }
 ```
 
@@ -94,7 +94,7 @@ Install with ```composer install```
 
 Just clone the repository, and set up your bootstrapping.
 
-```git clone https://github.com/gkunno/CryptoCoin.git```
+```git clone https://github.com/stormpat/CryptoCoin.git```
 ###Usage
 
 Require the composer autoload file
