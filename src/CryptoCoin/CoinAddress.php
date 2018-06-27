@@ -399,10 +399,10 @@ class CoinAddress
 
     public static function base58check_encode($leadingByte, $bin, $trailingByte = null)
     {
-        $bin = chr($leadingByte) . $bin;
+        $bin = chr(intval($leadingByte)) . $bin;
         if ($trailingByte !== null)
         {
-            $bin .= chr($trailingByte);
+            $bin .= chr(intval($trailingByte));
         }
         $checkSum = substr(hash('sha256', hash('sha256', $bin, true), true), 0, 4);
         $bin .= $checkSum;
